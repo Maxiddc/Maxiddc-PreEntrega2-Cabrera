@@ -1,6 +1,40 @@
 .main {
-    padding: 70px;
-    .imagen-main {
-        max-width: 420px;
+    .container {
+        background-color: #e7dada77;
+        margin-right: 0%;
+        margin-left: 0%;
+        max-width: 100%;
+
+        .row {
+            margin: 30px;
+            align-items: center;
+            padding: 30px;
+
+
+
+            .typo-parrafo {
+                font-family: $typo-parrafo;
+                font-size: 20px;
+            }
+
+            .imagen-main {
+                max-width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width:750px) {
+    .main {
+        .row{
+            flex-direction: column;
+        }
+        .imagen-main {
+            width: 280px;
+            
+        }
+        
+           
+        
     }
 }

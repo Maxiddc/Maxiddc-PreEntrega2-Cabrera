@@ -1,0 +1,22 @@
+
+.card{
+    background-color: #68b6824e;
+    max-width: 100%;
+
+
+.card-header{
+    font-family: $typo-titulo;
+    font-size: 20px;
+}
+
+
+.card-body {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    .icono-red-social {
+        max-width: 60px;
+    }
+
+}
+}

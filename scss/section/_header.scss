@@ -1,4 +1,4 @@
-.header {
+.header-index {
     background-image: url('https://images.unsplash.com/photo-1554757388-29a2a86ef02f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     height: 100vh;
     background-position: center;
@@ -64,3 +64,38 @@
         }
     }
 }
+
+.header-secciones{
+    .navbar {
+        background-color: #68b6822f;
+
+        .ancho-maximo {
+            max-width: 1400px;
+
+            .typo-titulo {
+                font-family: $typo-titulo;
+                font-weight: 900;
+                font-size: 23px;
+                color: black;
+            }
+
+
+
+            .navbar-nav {
+                width: 600px;
+                justify-content: space-between;
+
+                .typo-secciones {
+                    font-family: $typo-titulo;
+                    font-weight: 700;
+                    font-size: 21px;
+                    color: black;
+                }
+
+                .nav-link {
+                    transition: 0.6s;
+
+                    &:hover {
+                        text-decoration: underline;
+
+}}}}}}

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap");
-.header {
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap");
+.header-index {
   background-image: url("https://images.unsplash.com/photo-1554757388-29a2a86ef02f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   height: 100vh;
   background-position: center;
@@ -7,43 +8,94 @@
   background-size: cover;
   display: flex;
   flex-direction: column; }
-  .header .titulo-header {
+  .header-index .titulo-header {
     display: flex;
     align-content: flex-end;
     height: 90vh;
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: center; }
-    .header .titulo-header .titulo-header-h1 {
+    .header-index .titulo-header .titulo-header-h1 {
       font-family: "Barlow", sans-serif;
       font-weight: 700;
       font-size: 26px;
       color: black;
       backdrop-filter: blur(10px);
       padding: 5px; }
-  .header .navbar {
+  .header-index .navbar {
     background-color: #68b6822f; }
-    .header .navbar .ancho-maximo {
+    .header-index .navbar .ancho-maximo {
       max-width: 1400px; }
-      .header .navbar .ancho-maximo .typo-titulo {
+      .header-index .navbar .ancho-maximo .typo-titulo {
         font-family: "Barlow", sans-serif;
         font-weight: 900;
         font-size: 23px;
         color: black; }
-      .header .navbar .ancho-maximo .navbar-nav {
+      .header-index .navbar .ancho-maximo .navbar-nav {
         width: 600px;
         justify-content: space-between; }
-        .header .navbar .ancho-maximo .navbar-nav .typo-secciones {
+        .header-index .navbar .ancho-maximo .navbar-nav .typo-secciones {
           font-family: "Barlow", sans-serif;
           font-weight: 700;
           font-size: 21px;
           color: black; }
-        .header .navbar .ancho-maximo .navbar-nav .nav-link {
+        .header-index .navbar .ancho-maximo .navbar-nav .nav-link {
           transition: 0.6s; }
-          .header .navbar .ancho-maximo .navbar-nav .nav-link:hover {
+          .header-index .navbar .ancho-maximo .navbar-nav .nav-link:hover {
             text-decoration: underline; }
 
-.main {
-  padding: 70px; }
+.header-secciones .navbar {
+  background-color: #68b6822f; }
+  .header-secciones .navbar .ancho-maximo {
+    max-width: 1400px; }
+    .header-secciones .navbar .ancho-maximo .typo-titulo {
+      font-family: "Barlow", sans-serif;
+      font-weight: 900;
+      font-size: 23px;
+      color: black; }
+    .header-secciones .navbar .ancho-maximo .navbar-nav {
+      width: 600px;
+      justify-content: space-between; }
+      .header-secciones .navbar .ancho-maximo .navbar-nav .typo-secciones {
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        font-size: 21px;
+        color: black; }
+      .header-secciones .navbar .ancho-maximo .navbar-nav .nav-link {
+        transition: 0.6s; }
+        .header-secciones .navbar .ancho-maximo .navbar-nav .nav-link:hover {
+          text-decoration: underline; }
+
+.main .container {
+  background-color: #e7dada77;
+  margin-right: 0%;
+  margin-left: 0%;
+  max-width: 100%; }
+  .main .container .row {
+    margin: 30px;
+    align-items: center;
+    padding: 30px; }
+    .main .container .row .typo-parrafo {
+      font-family: "Red Hat Display", sans-serif;
+      font-size: 20px; }
+    .main .container .row .imagen-main {
+      max-width: 350px; }
+
+@media (max-width: 750px) {
+  .main .row {
+    flex-direction: column; }
   .main .imagen-main {
-    max-width: 420px; }
+    width: 280px; } }
+
+.card {
+  background-color: #68b6824e;
+  max-width: 100%; }
+  .card .card-header {
+    font-family: "Barlow", sans-serif;
+    font-size: 20px; }
+  .card .card-body {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly; }
+    .card .card-body .icono-red-social {
+      max-width: 60px; }
