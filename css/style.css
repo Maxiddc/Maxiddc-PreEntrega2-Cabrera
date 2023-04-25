@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap");
+.header {
+  background-image: url("https://images.unsplash.com/photo-1554757388-29a2a86ef02f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .header .titulo-header {
+    display: flex;
+    align-content: flex-end;
+    height: 90vh;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center; }
+    .header .titulo-header .titulo-header-h1 {
+      font-family: "Barlow", sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      color: black;
+      backdrop-filter: blur(10px);
+      padding: 5px; }
+  .header .navbar {
+    background-color: #68b6822f; }
+    .header .navbar .ancho-maximo {
+      max-width: 1400px; }
+      .header .navbar .ancho-maximo .typo-titulo {
+        font-family: "Barlow", sans-serif;
+        font-weight: 900;
+        font-size: 23px;
+        color: black; }
+      .header .navbar .ancho-maximo .navbar-nav {
+        width: 600px;
+        justify-content: space-between; }
+        .header .navbar .ancho-maximo .navbar-nav .typo-secciones {
+          font-family: "Barlow", sans-serif;
+          font-weight: 700;
+          font-size: 21px;
+          color: black; }
+        .header .navbar .ancho-maximo .navbar-nav .nav-link {
+          transition: 0.6s; }
+          .header .navbar .ancho-maximo .navbar-nav .nav-link:hover {
+            text-decoration: underline; }
+
+.main {
+  padding: 70px; }
+  .main .imagen-main {
+    max-width: 420px; }
