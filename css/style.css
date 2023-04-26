@@ -75,6 +75,9 @@
     margin: 30px;
     align-items: center;
     padding: 30px; }
+    .main .container .row .col {
+      display: flex;
+      justify-content: center; }
     .main .container .row .typo-parrafo {
       font-family: "Red Hat Display", sans-serif;
       font-size: 20px; }
@@ -87,6 +90,31 @@
   .main .imagen-main {
     width: 280px; } }
 
+@media (max-width: 400px) {
+  .main .imagen-main {
+    width: 250px; } }
+
+.main-contacto {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main-contacto .contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    width: 500px; }
+    .main-contacto .contenedor-formulario .typo-parrafo {
+      font-family: "Red Hat Display", sans-serif;
+      font-size: 20px; }
+    .main-contacto .contenedor-formulario .btn {
+      max-width: 100px; }
+
+@media (max-width: 500px) {
+  .main-contacto .contenedor-formulario {
+    width: 250px; } }
+
 .card {
   background-color: #68b6824e;
   max-width: 100%; }
@@ -98,4 +126,10 @@
     display: flex;
     justify-content: space-evenly; }
     .card .card-body .icono-red-social {
-      max-width: 60px; }
+      max-width: 50px; }
+
+@media (max-width: 400px) {
+  .footer .card-body {
+    width: 200px; }
+    .footer .card-body .icono-red-social {
+      width: 30px; } }

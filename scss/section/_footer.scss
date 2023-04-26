@@ -15,8 +15,22 @@
     display: flex;
     justify-content: space-evenly;
     .icono-red-social {
-        max-width: 60px;
+        max-width: 50px;
     }
 
 }
 }
+
+@media (max-width:400px) {
+    .footer {
+        .card-body {
+            width: 200px;
+            .icono-red-social {
+                width: 30px;
+            }
+        }
+        
+    }
+
+}
+

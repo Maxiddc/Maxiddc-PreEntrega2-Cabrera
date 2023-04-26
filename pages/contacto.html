@@ -45,19 +45,25 @@
 
     </header>
 
-        <main id="main-contacto">
-            <H1>CONTACTO</H1>
-            <form action="#" method="get">
-                <input type="text" name="Nombre" placeholder="Nombre completo">
-                <br><br>
-                <input type="tel" name="telefono" placeholder="(0342) 154578964">
-                <br><br>
-                <input type="submit">
-            </form>
-
+        <main class="main-contacto ">
+            <div class="contenedor-formulario ">            
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label typo-parrafo">Nombre y Apellido</label>
+                <input type="email" class="form-control typo-parrafo" id="exampleFormControlInput1" placeholder="Emilia Maciel">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label typo-parrafo">Dirección de email</label>
+                <input type="email" class="form-control typo-parrafo" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label typo-parrafo">Consulta</label>
+                <textarea class="form-control typo-parrafo" id="exampleFormControlTextarea1" rows="3" placeholder="Queremos leerte"></textarea> </textarea> 
+              </div>
+              <button type="button" class="btn btn-outline-dark typo-parrafo">Enviar</button>
+            </div>
         </main>
           
-        <footer>
+        <footer class="footer">
             <div class="card align-items-center">
     
                 <div class="card-body">
@@ -76,3 +82,5 @@
             crossorigin="anonymous"></script>
 </body>
 </html>
+
+
