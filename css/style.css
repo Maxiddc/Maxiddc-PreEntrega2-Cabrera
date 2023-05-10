@@ -67,24 +67,24 @@
   padding: 0;
   margin: 0; }
 
-.main .container {
+#main .container {
   background-color: #e7dada77;
   margin-right: 0%;
   margin-left: 0%;
   max-width: 100%; }
-  .main .container .row {
+  #main .container .row {
     align-items: center;
     padding: 50px; }
-    .main .container .row .col {
+    #main .container .row .col {
       display: flex;
       justify-content: center; }
-      .main .container .row .col p {
+      #main .container .row .col p {
         max-width: 460px;
         text-align: justify; }
-    .main .container .row .typo-parrafo {
+    #main .container .row .typo-parrafo {
       font-family: "Red Hat Display", sans-serif;
       font-size: 20px; }
-    .main .container .row .imagen-main {
+    #main .container .row .imagen-main {
       max-width: 350px;
       border-radius: 8px; }
 
@@ -98,7 +98,7 @@
   .main .imagen-main {
     width: 250px; } }
 
-.main-contacto {
+#main-contacto {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -106,27 +106,25 @@
   justify-content: center;
   align-items: center;
   background-color: #e7dada77; }
-  .main-contacto__titulo {
+  #main-contacto h1 {
     font-family: "Barlow", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    color: black;
-    margin: 50px; }
-  .main-contacto .contenedor-formulario {
+    font-size: 30px;
+    font-weight: 700; }
+  #main-contacto .contenedor-formulario {
     display: flex;
     flex-direction: column;
     width: 600px; }
-    .main-contacto .contenedor-formulario .typo-parrafo {
+    #main-contacto .contenedor-formulario .typo-parrafo {
       font-family: "Red Hat Display", sans-serif;
       font-size: 20px; }
-    .main-contacto .contenedor-formulario .btn {
+    #main-contacto .contenedor-formulario .btn {
       max-width: 100px; }
 
 @media (max-width: 500px) {
-  .main-contacto .contenedor-formulario {
+  #main-contacto .contenedor-formulario {
     width: 250px; } }
 
-.main-productos {
+#main-productos {
   z-index: 0;
   display: flex;
   max-width: 100%;
@@ -135,61 +133,76 @@
   background-color: #e7dada77;
   align-items: center;
   padding-bottom: 100px; }
-  .main-productos .photo-gallery {
+  #main-productos h1 {
+    font-family: "Barlow", sans-serif;
+    font-size: 30px;
+    font-weight: 700; }
+  #main-productos p {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: calc(1em + 0.5vw); }
+  #main-productos .photo-gallery {
     padding: 50px; }
-    .main-productos .photo-gallery .container {
-      min-height: 450px; }
-  .main-productos__titulo {
+    #main-productos .photo-gallery .container {
+      min-height: 450px;
+      border-radius: 8px; }
+  #main-productos__titulo {
     font-family: "Barlow", sans-serif;
     font-weight: 700;
     font-size: 26px;
     color: black; }
-  .main-productos__contenedor {
+  #main-productos__contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 300px;
     justify-content: space-between; }
-  .main-productos .photo-gallery h2 {
+  #main-productos .photo-gallery h2 {
     font-weight: bold;
     margin-bottom: 40px;
     padding-top: 40px;
     color: inherit; }
   @media (max-width: 767px) {
-    .main-productos .photo-gallery h2 {
+    #main-productos .photo-gallery h2 {
       margin-bottom: 10px;
       padding-top: 25px;
       font-size: 24px; } }
   @media (max-width: 575px) {
-    .main-productos .main-productos {
+    #main-productos .main-productos {
       width: 100%; }
-    .main-productos .img-fluid {
+    #main-productos .img-fluid {
       max-width: 250px; } }
-  .main-productos .photo-gallery .intro {
+  #main-productos .photo-gallery .intro {
     font-size: 16px;
     max-width: 500px;
     margin: 0 auto 40px; }
-    .main-productos .photo-gallery .intro h3 {
+    #main-productos .photo-gallery .intro h3 {
       margin-bottom: 0; }
-    .main-productos .photo-gallery .intro .photos {
+    #main-productos .photo-gallery .intro .photos {
       padding-bottom: 20px; }
-      .main-productos .photo-gallery .intro .photos .item {
+      #main-productos .photo-gallery .intro .photos .item {
         padding-bottom: 10px; }
 
-.main-servicios {
+#main-servicios {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #e7dada77;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .main-servicios .container {
+  #main-servicios h1 {
+    font-family: "Barlow", sans-serif;
+    font-size: 30px;
+    font-weight: 700; }
+  #main-servicios p {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: calc(1em + 0.5vw); }
+  #main-servicios .container {
     display: flex;
     width: 100%;
     padding: 2% 2%;
     box-sizing: border-box;
     height: 70vh; }
-  .main-servicios .box {
+  #main-servicios .box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,34 +210,78 @@
     max-width: 800px;
     flex: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: 1.5s;
     margin: 0 2%;
     background-color: #ffffff;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
     line-height: 0;
-    padding-top: 15px; }
-  .main-servicios .box > img {
+    padding-top: 15px;
+    border-radius: 8px; }
+  #main-servicios .box > img {
     width: 60%;
     height: calc(90%);
     object-fit: fill;
     transition: .5s; }
-  .main-servicios .box > span {
+  #main-servicios .box > span {
     font-size: 3.8vh;
     display: block;
     text-align: center;
     height: 10vh;
     line-height: 2.6; }
-  .main-servicios .box:hover {
+  #main-servicios .box:hover {
     flex: 1 1 50%; }
-  .main-servicios .box:hover > img {
+  #main-servicios .box:hover > img {
     object-fit: scale-down;
     width: 100%;
     height: 100%; }
   @media (max-width: 767px) {
-    .main-servicios .container {
+    #main-servicios .container {
       display: flex;
       flex-direction: column;
       height: 100%; } }
+
+#main-conocenos {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7dada77; }
+  #main-conocenos h1 {
+    font-family: "Barlow", sans-serif;
+    font-size: 30px;
+    font-weight: 700; }
+
+.conocenos-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 80%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  height: 500px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; }
+  .conocenos-contenedor div {
+    max-width: 40%;
+    padding-right: 30px; }
+    .conocenos-contenedor div p {
+      font-family: "Red Hat Display", sans-serif;
+      font-size: calc(1em + 0.5vw);
+      text-align: justify; }
+      .conocenos-contenedor div p a {
+        color: black; }
+
+@media (max-width: 900px) {
+  #main-conocenos {
+    height: 160%; }
+  .conocenos-contenedor {
+    flex-direction: column;
+    height: 150vh; }
+    .conocenos-contenedor div {
+      max-width: 80%; } }
 
 * {
   padding: 0;
