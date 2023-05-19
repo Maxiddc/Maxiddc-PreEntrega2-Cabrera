@@ -166,7 +166,7 @@
     #main-productos .main-productos {
       width: 100%; }
     #main-productos p {
-      max-width: 400px; }
+      margin: auto; }
     #main-productos .img-fluid {
       max-width: 250px; } }
   #main-productos .photo-gallery .intro {
