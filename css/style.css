@@ -125,7 +125,7 @@
   display: flex;
   max-width: 100%;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 150px;
   background-color: #e7dada77;
   align-items: center;
   padding-bottom: 100px; }
@@ -179,7 +179,7 @@
         padding-bottom: 10px; }
 
 #main-servicios {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 100px;
   background-color: #e7dada77;
   display: flex;
@@ -237,7 +237,7 @@
       height: 100%; } }
 
 #main-conocenos {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 100px;
   height: 100vh;
   display: flex;
@@ -272,10 +272,10 @@
 
 @media (max-width: 575px) {
   #main-conocenos {
-    height: 160%; }
+    height: 150vh; }
   .conocenos-contenedor {
     flex-direction: column;
-    height: 150vh; }
+    height: 130vh; }
     .conocenos-contenedor .parrafo-conocenos {
       max-width: 80%;
       padding-right: 0px; }
