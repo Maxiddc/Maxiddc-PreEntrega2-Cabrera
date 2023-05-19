@@ -23,7 +23,7 @@
         .navbar-nav {
             width: 600px;
             justify-content: space-between;
-
+            
 
             .typo-secciones {
                 font-family: $typo-titulo;
@@ -51,6 +51,9 @@
             .nav-link:hover {
                 --_p: 100%;
                 --_s: .3s;
+            }
+            .actual{
+                background-color: #6f9288d6;
             }
         }
     }
@@ -87,4 +90,12 @@
 
 .header-secciones {
     @extend .navbar;
+}
+
+@media (max-width:575px) {
+    .navbar {
+        .container-fluid {
+            max-width: 90%;
+        }
+    }
 }

@@ -272,6 +272,7 @@ $time: 1s;
         width: 100%;
         height: 100%;
     }
+}
 
     @media (max-width:575px) {
        
@@ -293,7 +294,7 @@ $time: 1s;
 #main-conocenos {
     padding-top: 150px;
     padding-bottom: 100px;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -362,5 +363,4 @@ $time: 1s;
 
 
     }
-}
 }
