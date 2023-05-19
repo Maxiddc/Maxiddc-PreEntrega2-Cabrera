@@ -274,15 +274,21 @@ $time: 1s;
     }
 
     @media (max-width:575px) {
+       
+           .servicios-parrafo{
+            padding-left: 50px;
+            padding-right: 50px;
+           }
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                }
+            }
+        
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
+    
 
-    }
-}
 
 #main-conocenos {
     padding-top: 150px;
@@ -356,5 +362,5 @@ $time: 1s;
 
 
     }
-
+}
 }

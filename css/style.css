@@ -233,56 +233,56 @@
     width: 100%;
     height: 100%; }
   @media (max-width: 575px) {
+    #main-servicios .servicios-parrafo {
+      padding-left: 50px;
+      padding-right: 50px; }
     #main-servicios .container {
       display: flex;
       flex-direction: column;
       height: 100%; } }
-
-#main-conocenos {
-  padding-top: 150px;
-  padding-bottom: 100px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #e7dada77; }
-  #main-conocenos h1 {
-    font-family: "Barlow", sans-serif;
-    font-size: 30px;
-    font-weight: 700; }
-
-.conocenos-contenedor {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 80%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: white;
-  height: 500px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 8px; }
-  .conocenos-contenedor .parrafo-conocenos {
-    max-width: 40%;
-    padding-right: 30px; }
-    .conocenos-contenedor .parrafo-conocenos p {
-      font-family: "Red Hat Display", sans-serif;
-      font-size: calc(1em + 0.5vw);
-      text-align: justify; }
-      .conocenos-contenedor .parrafo-conocenos p a {
-        color: black; }
-
-@media (max-width: 575px) {
-  #main-conocenos {
-    height: 150vh; }
-  .conocenos-contenedor {
+  #main-servicios #main-conocenos {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
-    height: 130vh; }
-    .conocenos-contenedor .parrafo-conocenos {
-      max-width: 80%;
-      padding-right: 0px; }
-    .conocenos-contenedor .video-conocenos iframe {
-      width: 280px; } }
+    align-items: center;
+    background-color: #e7dada77; }
+    #main-servicios #main-conocenos h1 {
+      font-family: "Barlow", sans-serif;
+      font-size: 30px;
+      font-weight: 700; }
+  #main-servicios .conocenos-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    height: 500px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; }
+    #main-servicios .conocenos-contenedor .parrafo-conocenos {
+      max-width: 40%;
+      padding-right: 30px; }
+      #main-servicios .conocenos-contenedor .parrafo-conocenos p {
+        font-family: "Red Hat Display", sans-serif;
+        font-size: calc(1em + 0.5vw);
+        text-align: justify; }
+        #main-servicios .conocenos-contenedor .parrafo-conocenos p a {
+          color: black; }
+  @media (max-width: 575px) {
+    #main-servicios #main-conocenos {
+      height: 150vh; }
+    #main-servicios .conocenos-contenedor {
+      flex-direction: column;
+      height: 130vh; }
+      #main-servicios .conocenos-contenedor .parrafo-conocenos {
+        max-width: 80%;
+        padding-right: 0px; }
+      #main-servicios .conocenos-contenedor .video-conocenos iframe {
+        width: 280px; } }
 
 * {
   padding: 0;
