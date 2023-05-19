@@ -164,11 +164,13 @@ $time: 1s;
         }
     }
 
-    @media (max-width:475px) {
+    @media (max-width:575px) {
         .main-productos {
             width: 100%;
         }
-
+p{
+    max-width: 400px;
+}
         .img-fluid {
             max-width: 250px;
         }
@@ -344,7 +346,7 @@ $time: 1s;
 
         .video-conocenos {
             iframe {
-                width: 300px;
+                width: 280px;
 
             }
 
