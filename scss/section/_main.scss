@@ -12,15 +12,16 @@ img.btn-whatsapp {
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-    border-radius:100px !important;
-    }
-    img.btn-whatsapp:hover{
-    border-radius:100px !important;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
-    -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
-    box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    border-radius: 100px !important;
+}
+
+img.btn-whatsapp:hover {
+    border-radius: 100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+    box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
     transition-duration: 1s;
-    } 
+}
 
 
 
@@ -30,7 +31,7 @@ img.btn-whatsapp {
         margin-right: 0%;
         margin-left: 0%;
         max-width: 100%;
-    
+
 
         .row {
 
@@ -83,7 +84,7 @@ img.btn-whatsapp {
     justify-content: center;
     align-items: center;
     background-color: #e7dada77;
-    
+
     h1 {
         font-family: $typo-titulo;
         font-size: 30px;
@@ -125,17 +126,19 @@ img.btn-whatsapp {
     #main-contacto {
         .contenedor-formulario {
             max-width: 350px;
-            .mb-3{
+
+            .mb-3 {
                 max-width: 300px;
-                
+
             }
+
             .btn {
-                margin-right: 230px;   
-            }
+                margin-right: 230px;
             }
         }
-
     }
+
+}
 
 
 #main-productos {
@@ -159,8 +162,9 @@ img.btn-whatsapp {
         font-size: calc(1em + 0.5vw);
         margin: 0;
     }
-    i{
-        font-family: $typo-parrafo; 
+
+    i {
+        font-family: $typo-parrafo;
     }
 
     .photo-gallery {
@@ -269,15 +273,16 @@ img.btn-whatsapp {
         bottom: 20px;
         right: 20px;
         cursor: pointer;
-        border-radius:100px !important;
-        }
-        img.btn-whatsapp:hover{
-        border-radius:100px !important;
-        -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
-        -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
-        box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+        border-radius: 100px !important;
+    }
+
+    img.btn-whatsapp:hover {
+        border-radius: 100px !important;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+        box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
         transition-duration: 1s;
-        } 
+    }
 
     h1 {
         font-family: $typo-titulo;
@@ -290,7 +295,8 @@ img.btn-whatsapp {
         font-size: calc(1em + 0.5vw);
         margin: 0;
     }
-    i{
+
+    i {
         font-family: $typo-parrafo;
         padding-bottom: 20px;
     }
@@ -298,7 +304,7 @@ img.btn-whatsapp {
     .servicios-fotos {
         display: flex;
         max-width: 90%;
-        height: 550px;
+        height: 70vh;
         justify-content: space-around;
         align-items: center;
         background-color: white;
@@ -315,21 +321,32 @@ img.btn-whatsapp {
         float: left;
 
         img {
-            width: 380px;
+            max-width: 25vw;
+            position: absolute;
+            left: 0;
+            transition: opacity 1.5s ease-in-out;
         }
     }
 
-    .contenedor img {
-        position: absolute;
-        left: 0;
-        transition: opacity 1.5s ease-in-out;
-    }
+
 
     .contenedor img.top:hover {
         opacity: 0;
     }
 }
 
+@media (max-width:1000px) {
+    #main-servicios {
+        .servicios-fotos {
+            height: 45vh;
+
+        }
+
+        .contenedor {
+            height: 300px;
+        }
+    }
+}
 
 @media (max-width:575px) {
     #main-servicios {
@@ -354,7 +371,7 @@ img.btn-whatsapp {
                 width: 350px;
 
                 img {
-                    width: 300px;
+                    max-width: 55vw;
                 }
             }
         }

@@ -260,7 +260,7 @@ img.btn-whatsapp:hover {
   #main-servicios .servicios-fotos {
     display: flex;
     max-width: 90%;
-    height: 550px;
+    height: 70vh;
     justify-content: space-around;
     align-items: center;
     background-color: white;
@@ -274,13 +274,18 @@ img.btn-whatsapp:hover {
     width: 450px;
     float: left; }
     #main-servicios .contenedor img {
-      width: 380px; }
-  #main-servicios .contenedor img {
-    position: absolute;
-    left: 0;
-    transition: opacity 1.5s ease-in-out; }
+      max-width: 25vw;
+      position: absolute;
+      left: 0;
+      transition: opacity 1.5s ease-in-out; }
   #main-servicios .contenedor img.top:hover {
     opacity: 0; }
+
+@media (max-width: 1000px) {
+  #main-servicios .servicios-fotos {
+    height: 45vh; }
+  #main-servicios .contenedor {
+    height: 300px; } }
 
 @media (max-width: 575px) {
   #main-servicios {
@@ -300,7 +305,7 @@ img.btn-whatsapp:hover {
         height: 350px;
         width: 350px; }
         #main-servicios .servicios-fotos .contenedor img {
-          width: 300px; } }
+          max-width: 55vw; } }
 
 #main-conocenos {
   padding-top: 130px;
