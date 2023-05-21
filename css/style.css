@@ -9,7 +9,8 @@
   width: 100%;
   background-color: #ffffffe0;
   z-index: 1;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 0; }
   .navbar .ancho-maximo, .header-secciones .ancho-maximo {
     max-width: 1400px; }
     .navbar .ancho-maximo .typo-titulo, .header-secciones .ancho-maximo .typo-titulo {
@@ -115,12 +116,21 @@
   #main-contacto .contenedor-formulario {
     display: flex;
     flex-direction: column;
-    width: 600px; }
-    #main-contacto .contenedor-formulario .typo-parrafo {
-      font-family: "Red Hat Display", sans-serif;
-      font-size: 20px; }
+    width: 600px;
+    background-color: white;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    #main-contacto .contenedor-formulario .mb-3 {
+      width: 500px; }
+      #main-contacto .contenedor-formulario .mb-3 .typo-parrafo {
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 20px; }
     #main-contacto .contenedor-formulario .btn {
-      max-width: 100px; }
+      max-width: 100px;
+      margin-right: 430px; }
 
 @media (max-width: 575px) {
   #main-contacto .contenedor-formulario {
@@ -131,10 +141,10 @@
   display: flex;
   max-width: 100%;
   flex-direction: column;
-  padding-top: 150px;
+  padding-top: 130px;
   background-color: #e7dada77;
   align-items: center;
-  padding-bottom: 100px; }
+  padding-bottom: 20px; }
   #main-productos h1 {
     font-family: "Barlow", sans-serif;
     font-size: 30px;
@@ -143,9 +153,13 @@
     font-family: "Red Hat Display", sans-serif;
     font-size: calc(1em + 0.5vw); }
   #main-productos .photo-gallery {
-    padding: 50px; }
+    padding: 20px; }
     #main-productos .photo-gallery .container {
+      max-width: 90%;
       min-height: 450px;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
       border-radius: 8px; }
       #main-productos .photo-gallery .container .productos-contenedor {
         display: flex;
@@ -187,9 +201,10 @@
         padding-bottom: 10px; }
 
 #main-servicios {
-  padding-top: 150px;
-  padding-bottom: 100px;
   background-color: #e7dada77;
+  padding-top: 130px;
+  height: 120vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -199,59 +214,56 @@
     font-weight: 700; }
   #main-servicios p {
     font-family: "Red Hat Display", sans-serif;
-    font-size: calc(1em + 0.5vw); }
-  #main-servicios .container {
+    font-size: calc(1em + 0.5vw);
+    padding-bottom: 20px; }
+  #main-servicios .servicios-fotos {
     display: flex;
-    width: 100%;
-    padding: 2% 2%;
-    box-sizing: border-box;
-    height: 70vh; }
-  #main-servicios .box {
-    display: flex;
-    flex-direction: column;
+    max-width: 90%;
+    height: 550px;
+    justify-content: space-around;
     align-items: center;
-    height: 68vh;
-    max-width: 800px;
-    flex: 1;
-    overflow: hidden;
-    transition: 1.5s;
-    margin: 0 2%;
-    background-color: #ffffff;
+    background-color: white;
+    padding-left: 50px;
+    padding-top: 30px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-    line-height: 0;
-    padding-top: 15px;
     border-radius: 8px; }
-  #main-servicios .box > img {
-    width: 60%;
-    height: calc(90%);
-    object-fit: fill;
-    transition: .5s; }
-  #main-servicios .box > span {
-    font-size: 3.8vh;
-    display: block;
-    text-align: center;
-    height: 10vh;
-    line-height: 2.6; }
-  #main-servicios .box:hover {
-    flex: 1 1 50%; }
-  #main-servicios .box:hover > img {
-    object-fit: scale-down;
-    width: 100%;
-    height: 100%; }
+  #main-servicios .contenedor {
+    position: relative;
+    height: 450px;
+    width: 450px;
+    float: left; }
+    #main-servicios .contenedor img {
+      width: 380px; }
+  #main-servicios .contenedor img {
+    position: absolute;
+    left: 0;
+    transition: opacity 1.5s ease-in-out; }
+  #main-servicios .contenedor img.top:hover {
+    opacity: 0; }
 
 @media (max-width: 575px) {
-  .servicios-parrafo {
-    padding-left: 50px;
-    padding-right: 50px; }
-  .container {
+  #main-servicios {
     display: flex;
     flex-direction: column;
-    height: 100%; } }
+    height: 230vh;
+    width: 100%;
+    padding-bottom: 20px; }
+    #main-servicios p {
+      max-width: 480px; }
+    #main-servicios .servicios-fotos {
+      display: flex;
+      flex-direction: column;
+      height: 1300px;
+      max-width: 80%; }
+      #main-servicios .servicios-fotos .contenedor {
+        height: 350px;
+        width: 350px; }
+        #main-servicios .servicios-fotos .contenedor img {
+          width: 300px; } }
 
 #main-conocenos {
-  padding-top: 150px;
-  padding-bottom: 100px;
-  height: 150vh;
+  padding-top: 130px;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,7 +271,8 @@
   #main-conocenos h1 {
     font-family: "Barlow", sans-serif;
     font-size: 30px;
-    font-weight: 700; }
+    font-weight: 700;
+    padding-bottom: 30px; }
 
 .conocenos-contenedor {
   display: flex;
@@ -284,7 +297,8 @@
 
 @media (max-width: 575px) {
   #main-conocenos {
-    height: 150vh; }
+    height: 160vh;
+    padding-bottom: 20px; }
   .conocenos-contenedor {
     flex-direction: column;
     height: 130vh; }
@@ -300,7 +314,7 @@
 
 footer {
   box-shadow: 5px 0px 2px 0px rgba(0, 0, 0, 0.16), 10px 0px 2px 0px rgba(0, 0, 0, 0.12);
-  background: #ffffffe0; }
+  background: #6f9288d6; }
   footer .lista-redes {
     display: flex;
     flex-direction: column;
