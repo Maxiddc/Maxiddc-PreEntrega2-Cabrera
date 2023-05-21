@@ -74,6 +74,22 @@
   padding: 0;
   margin: 0; }
 
+img.btn-whatsapp {
+  display: block !important;
+  position: fixed;
+  z-index: 9999999;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 100px !important; }
+
+img.btn-whatsapp:hover {
+  border-radius: 100px !important;
+  -webkit-box-shadow: 0px 0px 15px 0px #075e54;
+  -moz-box-shadow: 0px 0px 15px 0px #075e54;
+  box-shadow: 0px 0px 15px 0px #075e54;
+  transition-duration: 1s; }
+
 #main .container {
   background-color: #e7dada77;
   margin-right: 0%;
@@ -112,7 +128,8 @@
   #main-contacto h1 {
     font-family: "Barlow", sans-serif;
     font-size: 30px;
-    font-weight: 700; }
+    font-weight: 700;
+    padding-bottom: 30px; }
   #main-contacto .contenedor-formulario {
     display: flex;
     flex-direction: column;
@@ -134,7 +151,11 @@
 
 @media (max-width: 575px) {
   #main-contacto .contenedor-formulario {
-    max-width: 350px; } }
+    max-width: 350px; }
+    #main-contacto .contenedor-formulario .mb-3 {
+      max-width: 300px; }
+    #main-contacto .contenedor-formulario .btn {
+      margin-right: 230px; } }
 
 #main-productos {
   z-index: 0;
@@ -151,7 +172,10 @@
     font-weight: 700; }
   #main-productos p {
     font-family: "Red Hat Display", sans-serif;
-    font-size: calc(1em + 0.5vw); }
+    font-size: calc(1em + 0.5vw);
+    margin: 0; }
+  #main-productos i {
+    font-family: "Red Hat Display", sans-serif; }
   #main-productos .photo-gallery {
     padding: 20px; }
     #main-productos .photo-gallery .container {
@@ -208,6 +232,20 @@
   display: flex;
   flex-direction: column;
   align-items: center; }
+  #main-servicios img.btn-whatsapp {
+    display: block !important;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 100px !important; }
+  #main-servicios img.btn-whatsapp:hover {
+    border-radius: 100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px #075e54;
+    -moz-box-shadow: 0px 0px 15px 0px #075e54;
+    box-shadow: 0px 0px 15px 0px #075e54;
+    transition-duration: 1s; }
   #main-servicios h1 {
     font-family: "Barlow", sans-serif;
     font-size: 30px;
@@ -215,6 +253,9 @@
   #main-servicios p {
     font-family: "Red Hat Display", sans-serif;
     font-size: calc(1em + 0.5vw);
+    margin: 0; }
+  #main-servicios i {
+    font-family: "Red Hat Display", sans-serif;
     padding-bottom: 20px; }
   #main-servicios .servicios-fotos {
     display: flex;
