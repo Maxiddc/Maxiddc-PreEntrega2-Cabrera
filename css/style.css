@@ -124,7 +124,11 @@ img.btn-whatsapp:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e7dada77; }
+  background-color: #e7dada77; 
+  .swal-overlay {
+    background-color: rgba(43, 165, 137, 0.45);
+  }
+}
   #main-contacto h1 {
     font-family: "Barlow", sans-serif;
     font-size: 30px;
